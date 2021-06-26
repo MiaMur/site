@@ -1,0 +1,99 @@
+@media screen and (max-width: 1365px) {
+  .feet,
+  #left-foot,
+  #right-foot {
+    text-align: center;
+  }
+  .feet {
+    width: 700px;
+    height: auto;
+    padding-top: 40px;
+  }
+  .foot-brand {
+    width: 200px;
+  }
+  .telly {
+    float: none;
+  }
+  #right-foot {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /*body{
+    background:none;
+  }*/
+  .sections {
+    position: relative;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    margin-top: 100px;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+  .sidebar {
+    width: 100vw;
+  }
+  .bio-left-section {
+    width: 100vw;
+  }
+  .left-bio {
+    margin: 0;
+    padding: 0;
+    border: 2px white solid;
+    width: 100%;
+  }
+  .feet {
+    width: 50%;
+  }
+  body {
+    background-image: none;
+  }
+  .alt-background {
+    background: url(images.salon/inside\ salon.jpg) center center no-repeat;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    margin: 0;
+    scroll-behavior: unset;
+  }
+}
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links {
+    height: auto;
+    display: flex;
+    transition: 1s;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+
+  .links a:hover {
+    padding: 0;
+  }
+}
