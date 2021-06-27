@@ -7,21 +7,37 @@
 }
 
 #promo,
-#book,
-#bio,
-#brand {
-  scroll-margin-top: -300px;
+#book {
+  scroll-margin-top: -100px;
 }
+#bio {
+  scroll-margin-top: -200px;
+}
+#brand {
+  scroll-margin-top: -100px;
+}
+#book {
+  margin-bottom: 200px;
+}
+
 body {
   background: url(images.salon/inside\ salon.jpg) top center / 90% 100% fixed;
 }
 #top-nav {
   /*was topnav*/
-  background: black;
+  background: rgb(10, 15, 15);
   position: fixed;
   z-index: 5;
   width: 100%;
 }
+.back-to-stylists {
+  text-decoration: underline;
+}
+.promo,
+.book {
+  text-align: center;
+}
+
 .nav-header {
   display: flex;
   align-items: center;
@@ -50,6 +66,29 @@ body {
   background-color: rgb(244, 243, 253, 0.9);
   font-family: "Niconne", cursive;
 }
+.sections {
+  margin-top: 400px;
+  display: inline-block;
+  width: 100vw;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 50px;
+}
+
+article {
+  height: 100vh auto;
+}
+.tag {
+  opacity: 0;
+  transform: translate(0, 5vh);
+  transition: all 2s;
+}
+.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 .hero-logo {
   margin: auto;
   padding: 10px;
@@ -114,12 +153,12 @@ li {
   color: lightgrey;
   transition: 1s;
 }
-.hero {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-}
+.hero,
+.hero-logo {
+  visibility: hidden;
 
+  margin: 0;
+}
 .logo {
   border: 3px solid black;
   padding: 12px;
@@ -147,26 +186,36 @@ hr {
   height: auto;
   display: block;
   margin: auto;
-  opacity: 0.8;
+  opacity: 0.6;
   box-shadow: 0 5px 10px black;
-
-  padding: 10px;
+  margin-bottom: 20px;
 }
 .brand-blurb {
   color: rgb(233, 231, 231);
-  letter-spacing: 1px;
   word-spacing: 4px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 5px;
   padding: 15px 30px 15px 30px;
-  font-size: 18px;
-  line-height: 30px;
+
   margin: 30px;
   margin: auto;
+}
+.bio-blurb {
+  width: 100%;
+  letter-spacing: 1px;
+  padding: 2rem 4rem 2rem 4rem;
+  text-align: left;
+  display: inline-block;
+  color: rgb(233, 231, 231);
+}
+.brand-blurb,
+.bio-blurb {
+  background-color: rgba(0, 0, 0, 0.8);
+  line-height: 30px;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-family: "Viaoda Libre", cursive;
-  border: 0.25px solid rgb(53, 0, 0);
+  letter-spacing: 1px;
 }
 .brand-blurb::first-letter {
   color: rgb(0, 255, 255, 0.9);
@@ -182,15 +231,14 @@ hr {
   text-align: center;
 }
 .left-bio {
-  display: inline-flex;
+  display: flex;
   width: 90vw;
-  border: solid 2px white;
 }
 .bio-left-section {
   background-color: rgba(0, 0, 0, 0.7);
   margin: auto;
   border-radius: 1px;
-  width: 60vw;
+  width: 100%;
 }
 
 /*#portrait,
@@ -198,18 +246,7 @@ hr {
 .bio-left-section {
   float: left; /*remove in responsive
 }*/
-.bio-blurb {
-  max-width: 100%;
-  min-width: 100%;
-  font-family: "Source Sans Pro", sans-serif;
-  line-height: 25px;
-  letter-spacing: 1px;
-  font-size: 1rem;
-  padding: 2rem 4rem 2rem 4rem;
-  text-align: left;
-  display: inline-block;
-  color: rgb(233, 231, 231);
-}
+
 .img-gallery-stylist1 {
   box-shadow: 0 5px 10px rgba(0, 0, 0.5);
   border-radius: 2px;
@@ -258,15 +295,6 @@ hr {
 .sidebar a:hover {
   color: #a7a7a7;
 }
-.sections {
-  margin-top: 500px;
-  display: inline-block;
-  width: 100vw;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 50px;
-}
 
 #bio {
   padding-top: 100px;
@@ -286,9 +314,9 @@ hr {
 }
 
 #portrait {
-  width: auto;
-  height: auto;
   width: 100%;
+  height: auto;
+
   position: relative;
   margin: 2px;
   display: inline-block;
@@ -322,8 +350,9 @@ hr {
 
 /*dont fuck with*/
 .footer {
-  background: #0a0f0f;
+  background: rgb(10, 15, 15);
   width: 100%;
+  height: auto;
   /*margin-bottom:0;*/
 }
 .footer,
@@ -331,17 +360,13 @@ hr {
   text-align: center;
   display: inline-block;
 }
-
-.footer {
-  height: auto;
-}
 .feet {
   width: 300px;
   height: 300px;
 }
 #left-foot {
   text-align: left;
-  overflow-y: hidden;
+  height: auto;
   /*display:inline-block;*/
 }
 #right-foot {
@@ -400,16 +425,17 @@ a {
 .social {
   margin-top: 20px;
 }
-.products,
-.b-logo {
+.extra {
   width: 100px;
   padding: 10px;
   height: 150px;
+  display: inline-block;
+  border: 2px double silver;
+  margin-left: 10px;
 }
+
 .telly:hover,
-.icons:hover,
-.products,
-.b-logo {
+.icons:hover {
   border: 2px solid silver;
 }
 .foot-nav-head {

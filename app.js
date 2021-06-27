@@ -1,14 +1,16 @@
-const menuIcon = document.querySelector(".menu-icon");
-const links = document.querySelector(".links");
 
-navToggle.addEventListener("click", function () {
-  // console.log(links.classList);
-  // console.log(links.classList.contains("random"));
-  // console.log(links.classList.contains("links"));
-  // if (links.classList.contains("show-links")) {
-  //   links.classList.remove("show-links");
-  // } else {
-  //   links.classList.add("show-links");
-  // }
-  links.classList.toggle("show-links");
+$(document).on("scroll", function(){
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var tags = $(".tag");
+
+  for (var i = 0; i < tags.length; i++){
+    var tag = tags[i];
+
+    if($(tag).position().top < pageBottom){
+      $(tag).addClass("visible");
+    }else{
+      $(tag).removeClass("visible");
+    }
+  }
 });
