@@ -32,24 +32,46 @@
     margin: 0;
     margin-top: 200px;
   }
-
+  .brand-image {
+    width: 100vw;
+    height: auto;
+  }
   .nav-logo {
     display: none;
+  }
+  .hero {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    visibility: visible;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  .hero-logo {
+    visibility: visible;
   }
   .sidebar {
     width: 100vw;
   }
-  .bio-left-section {
-    width: 100vw;
+
+  .bio-blurb {
+    padding: 10px;
+  }
+  .stylist-header {
+    width: 250px;
+    /*display: inline-block;*/
   }
   .left-bio {
     margin: 0;
     padding: 0;
-    border: 2px white solid;
+
     width: 100%;
   }
+  .footer-logo {
+    width: 250px;
+  }
   .feet {
-    width: 50%;
+    width: 100%;
   }
   body {
     background-image: none;
