@@ -98,7 +98,6 @@ li {
 }
 .links a {
   font-family: "Niconne";
-
   text-decoration: none;
   font-size: 25px;
   display: block;
@@ -130,39 +129,19 @@ li {
   visibility: hidden;
 }
 
-.topnav {
-  position: fixed;
-  background-color: #0a0f0f;
-  width: 100%;
-  font-family: Niconne;
-  font-size: 25px;
-  z-index: 2;
-  overflow: hidden;
+.hero {
+  margin-top: 200px;
+  position: relative;
 
-  /* width of entire menu bar*/
-}
-.topnav a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  padding: 14px 16px;
-}
-
-.topnav a:hover {
-  background: #555;
-  color: lightgrey;
-  transition: 1s;
-}
-.hero,
-.hero-logo {
-  visibility: hidden;
-
-  margin: 0;
+  display: inline-block;
+  text-align: center;
+  visibility: visible;
+  padding: 30px auto auto 50px;
 }
 .logo {
   border: 3px solid black;
-  padding: 12px;
-  font-size: 30px;
+  padding: 15px 12px 15px 12px;
+  font-size: 40px;
   display: inline-block;
   color: black;
   background-color: rgb(244, 243, 253, 0.9);
@@ -316,7 +295,7 @@ hr {
 #portrait {
   width: 100%;
   height: auto;
-
+  overflow: hidden;
   position: relative;
   margin: 2px;
   display: inline-block;
@@ -354,6 +333,10 @@ hr {
   width: 100%;
   height: auto;
   /*margin-bottom:0;*/
+}
+.footer-logo {
+  padding: 12px;
+  font-size: 30px;
 }
 .footer,
 .feet {
