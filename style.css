@@ -464,6 +464,7 @@ a {
 }
 .modal-imgs {
   margin-top: 50px;
+  margin-bottom: 50px;
   background-color: rgb(0, 0, 0, 0.6);
 }
 
@@ -480,7 +481,7 @@ a {
 .modal {
   display: none;
   /* Hidden by default */
-  position: absolute; /* Stay in place */
+  position: fixed; /* Stay in place */
   /* Sit on top */
   z-index: 1;
   left: 0;
@@ -527,13 +528,15 @@ a {
 
 /* The Close Button */
 .close {
-  position: absolute;
   top: 15px;
   right: 35px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
+  float: right;
+  margin-right: 20px;
+  display: block;
 }
 
 .close:hover,

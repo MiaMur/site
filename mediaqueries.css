@@ -25,6 +25,10 @@
   /*body{
     background:none;
   }*/
+  .modal-imgs {
+    margin: 0;
+    padding: 0;
+  }
   .sections {
     position: relative;
     width: 100vw;
@@ -38,6 +42,10 @@
   }
   .nav-logo {
     display: none;
+  }
+  .logo {
+    padding: 12px;
+    font-size: 30px;
   }
   .hero {
     position: relative;
@@ -88,6 +96,9 @@
     z-index: -100;
     margin: 0;
     scroll-behavior: unset;
+  }
+  .links a {
+    text-align: center;
   }
 }
 @media screen and (min-width: 800px) {
