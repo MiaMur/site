@@ -45,7 +45,7 @@ var modal = document.getElementById('my-modal');
 var images = document.getElementsByClassName('img-gallery-item');
 // the image in the modal
 var modalImg = document.getElementById("img01");
-var control = document.getElementById("my-modal")
+
 
 
 // Go through all of the images with our custom class

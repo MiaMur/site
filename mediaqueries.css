@@ -31,16 +31,11 @@
     width: 100%;
   }
   /*hide me*/
-  ::-webkit-scrollbar {
-    display: none;
-  }
 
   .modal {
     height: auto;
   }
-  .modal-content {
-    padding-top: 20px;
-  }
+
   .modal-imgs img {
     width: 50px;
     height: 75px;
