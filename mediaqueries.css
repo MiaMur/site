@@ -35,7 +35,7 @@
   }
 
   .modal {
-    height: 1000px;
+    height: auto;
   }
   .modal-imgs img {
     width: 75px;

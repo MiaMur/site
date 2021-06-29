@@ -16,8 +16,11 @@
 #brand {
   scroll-margin-top: -100px;
 }
+#img-a {
+  scroll-margin-top: -500px;
+}
 #book {
-  margin-bottom: 200px;
+  margin-bottom: 500px;
 }
 
 body {
@@ -457,6 +460,10 @@ a {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  opacity: 0.5s;
+}
+#img01 {
+  opacity: 1;
 }
 
 .myImg:hover {
@@ -489,6 +496,7 @@ a {
   height: auto; /* Full height */
   background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
   padding: 30px;
+  border: 1px solid red;
 }
 
 /* Modal Content (image) */
