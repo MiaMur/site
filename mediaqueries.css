@@ -26,13 +26,17 @@
     background:none;
   }*/
   .modal-imgs {
+    
     margin: 0;
     padding: 0;
     width: 100%;
   }
-  /*hide me*/
+  #img-a{
+    scroll-margin-top:-50px;
+  }
 
   .modal {
+    position:fixed;
     height: auto;
   }
 
