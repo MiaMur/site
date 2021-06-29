@@ -25,18 +25,17 @@
   /*body{
     background:none;
   }*/
+  #img-a {
+    scroll-margin-top: 250px;
+  }
   .modal-imgs {
-    
     margin: 0;
     padding: 0;
     width: 100%;
   }
-  #img-a{
-    scroll-margin-top:150px;
-  }
+  /*hide me*/
 
   .modal {
-    position:fixed;
     height: auto;
   }
 
@@ -94,7 +93,6 @@
   .left-bio {
     margin: 0;
     padding: 0;
-
     width: 100%;
   }
   .footer-logo {
@@ -103,6 +101,7 @@
   .feet {
     width: 100%;
   }
+
   body {
     background-image: none;
   }
