@@ -24,10 +24,10 @@
 @media screen and (max-width: 800px) {
   /*body{
     background:none;
-  }*/
-  #img-a {
+  }#img-a {
     scroll-margin-top: 250px;
-  }
+  }*/
+
   .modal-imgs {
     margin: 0;
     padding: 0;

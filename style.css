@@ -16,9 +16,9 @@
 #brand {
   scroll-margin-top: -100px;
 }
-#img-a {
+/*#img-a {
   scroll-margin-top: 100px;
-}
+}*/
 #book {
   margin-bottom: 500px;
 }
@@ -215,12 +215,16 @@ hr {
 .left-bio {
   display: flex;
   width: 100vw;
+
+  padding: 0;
+  margin: 0;
 }
 .bio-left-section {
   background-color: rgba(0, 0, 0, 0.7);
   margin: auto;
   border-radius: 1px;
   width: 100%;
+  border: 1px solid red;
 }
 
 /*#portrait,
